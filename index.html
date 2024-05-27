@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Productos</h1>
+    </header>
+    <main>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="busqueda">
+                <label for="busqueda">Buscar Producto:</label>
+                <input type="text" id="busqueda" name="busqueda">
+                <button id="btn-buscar">Buscar</button>
+            </div>
+            <table id="tabla-productos">
+                <thead>
+                    <tr>
+                        <th>Presupuesto</th>
+                        <th>Unidad</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Valor Unitario</th>
+                        <th>Valor Total</th>
+                        <th>Fecha de Adquisición</th>
+                        <th>Proveedor</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-productos">
+                    <!-- Aquí se renderizarán los productos -->
+                </tbody>
+            </table>
+        </section>
+        <section id="formulario">
+            <h3>Agregar Producto</h3>
+            <form id="form-producto">
+                <div class="form-group">
+                    <label for="presupuesto">Presupuesto:</label>
+                    <input type="text" id="presupuesto" name="presupuesto" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="unidad">Unidad:</label>
+                    <input type="text" id="unidad" name="unidad" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="producto">Producto:</label>
+                    <input type="text" id="producto" name="producto" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="valorUnitario">Valor Unitario:</label>
+                    <input type="number" id="valorUnitario" name="valorUnitario" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="fechaAdquisicion">Fecha de Adquisición:</label>
+                    <input type="date" id="fechaAdquisicion" name="fechaAdquisicion" class="input-field">
+                </div>
+                <div class="form-group">
+                    <label for="proveedor">Proveedor:</label>
+                    <input type="text" id="proveedor" name="proveedor" class="input-field">
+                </div>
+                <input type="submit" id="boton" value="Agregar" class="submit-btn">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
